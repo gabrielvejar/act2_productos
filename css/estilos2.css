@@ -1,0 +1,198 @@
+:root {
+    --verde: #58B957;
+    --rojo: #FF1305;
+    --gris: #F7F7F7;
+    --gris-claro: #EEEEEE;
+    --blanco: #FFFFFF; 
+    --negro: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+#wrapper {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44em;
+}
+
+#arriba,
+#abajo {
+  position: relative;
+}
+
+#row-titulo {
+    height: 3em;
+    text-align: center;
+    font-size: 1.02em;
+    font-weight: bold;
+}
+
+#formulario {
+    position: relative;
+    float: left;
+    /* background-color: red; */
+    height: 27em;
+    width: 21em;
+}
+
+#form-producto {
+    height: 100%;
+}
+
+#tabla-formulario{
+    /* background-color: blue; */
+    height: 100%;
+}
+
+
+#porcentajes {
+    position: relative;
+    top: 5em;
+    float: right;
+    /* background-color: red; */
+    height: 20em;
+    width: 20em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2px solid var(--negro);
+}
+
+#tabla-porcentajes {
+    font-size: 0.8em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: -1px;
+}
+#tabla-porcentajes td {
+    width: 42%;
+    padding: .5em 0;
+}
+#tabla-porcentajes td:nth-child(1) {
+    width: 16%;
+    padding-left: 1em;
+}
+
+#tabla-porcentajes td:nth-child(3) {
+    text-align: center;
+}
+
+#tabla-porcentajes table, 
+#tabla-porcentajes  td, 
+#tabla-porcentajes tr{
+    border-bottom: 2px solid var(--negro);
+}
+
+ #tabla-porcentajes  td:nth-child(1){
+    border-left: 0 px solid var(--negro);
+ }
+
+#tabla-porcentajes thead,
+#tabla-lista-productos thead {
+    background-color: var(--gris);
+    font-weight: bold;
+}
+
+#tabla-lista-productos td {
+    padding: 0.5em;
+}
+
+#tabla-lista-productos {
+    border-collapse: collapse;
+}
+
+#lista-productos {
+    /* background-color: rgb(14, 167, 83); */
+    position: relative;
+    float: left;
+    height: 20em;
+    width: 100%;
+    overflow-y: scroll;
+    border: 2px solid var(--gris-claro);
+    border-radius: 0.375em;
+}
+
+/* table, td, tr {
+    border: 2px solid black;
+    border-collapse: collapse;
+} */
+
+#tabla-lista-productos{
+    width: 100%;
+}
+
+#tbody-lista-productos td {
+    border-bottom: 2px solid var(--gris-claro);
+}
+
+#tbody-lista-productos td:nth-child(1) {
+    font-size: .8em;
+}
+
+#tbody-lista-productos td:nth-child(2) {
+    width: 5em;
+    /* text-align: center; */
+}
+
+#div-xml {
+    /* background-color: rgb(167, 14, 142); */
+    position: relative;
+    float: left;
+    height: 5em;
+    width: 100%;
+}
+
+label {
+    font-size: .7em;
+}
+
+input[type="text"] ,
+select{
+    width: 11.250em;
+    height: 2.250em;
+    border-radius:  0.375em;
+    background-color: var(--gris);
+    border: 1px solid var(--negro);
+}
+
+  #chk-texto {
+    font-size: .95em;
+    /* 1.37em */
+  }
+
+  #btn-guardar,
+  #btn-eliminar {
+    width: 4.5em;
+    height: 2.25em;
+    padding: 0;
+    border-radius:  0.375em;
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+  }
+
+  #btn-guardar {
+    background-color: var(--verde);
+  }
+  #btn-eliminar {
+    background-color: var(--rojo);
+}
+
+  #btn-descargar-xml {
+    background-color: var(--verde);
+    width: 9em;
+    height: 2.25em;
+    padding: 0;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius:  0.375em;
+    color: var(--blanco);
+    border: none;
+    cursor: pointer;
+}

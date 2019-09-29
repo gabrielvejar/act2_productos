@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <title>Mantenedor de Productos</title>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="arriba">
+            <div id="formulario">
+                <form id="form-producto">
+                    <table id="tabla-formulario">
+                        <tbody>
+                            <tr id="row-titulo">
+                                <td colspan="2">
+                                    Mantenedor de Productos
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nombre-producto">Nombre Producto</label><br />
+                                    <input type="text" name="nombre-producto" id="nombre-producto">
+                                </td>
+                                <td>
+                                    <label for="precio-producto">Precio</label><br />
+                                    <input type="text" name="precio-producto" id="precio-producto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tipo-producto">Tipos de Producto</label><br />
+                                    <select name="tipo-producto" id="tipo-producto">
+                                        <option value="0">Seleccione una opción</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="codigo-producto">Código Producto</label><br />
+                                    <input type="text" name="codigo-producto" id="codigo-producto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="unidad-producto">Unidad de Producto</label><br />
+                                    <select name="unidad-producto" id="unidad-producto">
+                                        <option value="0">Seleccione una opción</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="cantidad-producto">Cantidad</label><br />
+                                    <input type="text" name="cantidad-producto" id="cantidad-producto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>                                    
+                                    <!-- <input type="checkbox" name="chk-compra" id="chk-compra"><label for="chk-compra"><span id="chk-texto">Compra de Producto</span></label> -->
+
+                                    <input type="checkbox" name="chk-compra" id="chk-compra"><label for="chk-compra" id="chk-texto">Compra de Producto</label>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button id="btn-guardar">Guardar</button>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+
+            </div>
+        </div>
+
+
+        <div id="porcentajes">
+            <table id="tabla-porcentajes">
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Producto</td>
+                        <td>% de compras</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Audifonos</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mouse</td>
+                        <td>25%</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div id="abajo">
+            <div id="lista-productos">
+                <table id="tabla-lista-productos">
+                    <thead>
+                        <td colspan="2">
+                            Productos
+                        </td>
+                    </thead>
+                    <tbody id="tbody-lista-productos">
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                >>> Nombre: [nombre producto] - Cantidad: [cantidad de producto] - Precio: [precio] -
+                            </td>
+                            <td>
+                                <button id="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="div-xml">
+                <button id="btn-descargar-xml">Descargar XML</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
